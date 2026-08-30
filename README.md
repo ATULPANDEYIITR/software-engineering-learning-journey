@@ -60,3 +60,60 @@ To understand how reliable, maintainable, scalable, and secure software is desig
 * [ ] Security
 * [ ] CI/CD
 * [ ] Agile Development
+
+# Day 01: Software Engineering Fundamentals
+
+## Objective
+
+Begin building a strong foundation in Software Engineering by understanding how software is planned, designed, developed, tested, deployed, and maintained.
+
+## Topics Covered
+
+* What is Software Engineering?
+* Programming vs Software Engineering
+* Software Requirements
+* Functional Requirements
+* Non-Functional Requirements
+* Software Development Life Cycle
+* Basic Software Design
+* Functions and Modularity
+* Error Handling
+* Software Testing
+* Version Control
+* Documentation
+* Software Quality
+* Software Engineering Workflow
+
+## Code Implementation
+
+The Python program demonstrates:
+
+* Basic software engineering concepts
+* Defining software requirements
+* Functional and non-functional requirements
+* SDLC stages
+* Basic software components
+* Functions and modularity
+* Basic error handling
+* Simple software testing
+* Version control concepts
+* Documentation
+* Software quality attributes
+
+**External Libraries:** None
+
+## Why This Matters
+
+Software Engineering provides a structured approach to building reliable, maintainable, secure, and scalable software.
+
+These fundamentals provide the foundation for learning software architecture, design patterns, testing, Git, Agile development, DevOps, system design, and professional software development practices.
+
+## Learning Approach
+
+Software Engineering will be covered gradually, starting with fundamental concepts and progressing toward software development methodologies, architecture, design principles, testing, version control, Agile, DevOps, system design, and advanced engineering practices.
+
+## Day 01 Completed
+
+**Focus:** Introduction to Software Engineering
+
+**Next:** Continue with the next concepts in Software Engineering.
