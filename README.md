@@ -61,7 +61,7 @@ To understand how reliable, maintainable, scalable, and secure software is desig
 * [ ] CI/CD
 * [ ] Agile Development
 
-# Day 01: Software Engineering Fundamentals
+# Day 00: Software Engineering Fundamentals
 
 ## Objective
 
@@ -112,8 +112,3 @@ These fundamentals provide the foundation for learning software architecture, de
 
 Software Engineering will be covered gradually, starting with fundamental concepts and progressing toward software development methodologies, architecture, design principles, testing, version control, Agile, DevOps, system design, and advanced engineering practices.
 
-## Day 01 Completed
-
-**Focus:** Introduction to Software Engineering
-
-**Next:** Continue with the next concepts in Software Engineering.
