@@ -1,5 +1,5 @@
 # ============================================================
-# DAY 01: SOFTWARE ENGINEERING FUNDAMENTALS
+# DAY 00: SOFTWARE ENGINEERING FUNDAMENTALS
 # ============================================================
 
 print("DAY 01 - SOFTWARE ENGINEERING FUNDAMENTALS")
