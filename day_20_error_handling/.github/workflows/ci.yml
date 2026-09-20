@@ -1,0 +1,68 @@
+# File: .github/workflows/ci.yml
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  python:
+    name: Python tests and lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install development dependencies
+        run: python -m pip install --upgrade pip "pytest>=8,<9" "ruff>=0.8,<1"
+
+      - name: Check formatting
+        run: ruff format --check .
+
+      - name: Run lint
+        run: ruff check .
+
+      - name: Run tests
+        run: pytest
+
+  cpp:
+    name: C++ build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure CMake
+        run: cmake -S . -B build
+
+      - name: Build
+        run: cmake --build build --config Release
+
+      - name: Run executable
+        run: ./build/error_handling_demo
+
+  web:
+    name: Browser source validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate JavaScript syntax
+        run: node --check web/app.js
+
+      - name: Verify required web files
+        run: |
+          test -f web/index.html
+          test -f web/style.css
+          test -f web/app.js
