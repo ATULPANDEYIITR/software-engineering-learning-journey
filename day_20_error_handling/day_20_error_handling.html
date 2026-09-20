@@ -1,0 +1,65 @@
+<!-- File: web/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Interactive demonstration of validation, exceptions, and defensive programming."
+    >
+    <title>Defensive Error Handling Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="panel">
+            <h1>Defensive Error Handling Lab</h1>
+            <p>
+                Enter an amount to observe validation, business-rule checks,
+                and controlled exception handling.
+            </p>
+
+            <div class="balance-card">
+                <span>Current balance</span>
+                <strong id="balance">0.00</strong>
+            </div>
+
+            <label for="amount">Transaction amount</label>
+            <input
+                id="amount"
+                type="number"
+                min="0"
+                step="0.01"
+                placeholder="Enter an amount"
+                autocomplete="off"
+            >
+
+            <div class="actions">
+                <button id="deposit" type="button">Deposit</button>
+                <button id="withdraw" type="button">Withdraw</button>
+            </div>
+
+            <p id="message" class="message" aria-live="polite"></p>
+
+            <section class="concepts">
+                <h2>Defensive controls demonstrated</h2>
+                <ul>
+                    <li>Type and format validation</li>
+                    <li>Finite-number validation</li>
+                    <li>Positive-value validation</li>
+                    <li>Business-rule enforcement</li>
+                    <li>Expected exception handling</li>
+                    <li>Unexpected error isolation</li>
+                    <li>Safe state updates after successful validation</li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
